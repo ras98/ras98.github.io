@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title>Portfolio WIP</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Jua" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<nav class="navbar">
+		<div class = "logo">
+			s0D
+		</div>
+		
+		<div class="menu-toggle">
+			<input type="checkbox"/>
+
+			<span></span>
+			<span></span>
+			<span></span>
+
+			<ul class = "navbar__list">
+				<li class="navbar__list-item"><a href="#header" class="navbar__link"><i class="fas fa-home"></i></a></li>
+				<li class="navbar__list-item"><a href="#about" class="navbar__link"><i class="fas fa-user-circle"></i></a></li>
+				<li class="navbar__list-item"><a href="#skills" class="navbar__link"><i class="fas fa-toolbox"></i></a></li>
+				<li class="navbar__list-item"><a href="#portfolio" class="navbar__link"><i class="fas fa-th"></i></a></li>
+				<li class="navbar__list-item"><a href="#contact" class="navbar__link"><i class="fas fa-envelope"></i></a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+
+	<section class="header-section" id  = "header">
+		<video autoplay muted loop class = "header-section__bg-video">
+ 			<source src="videos/header-section/background.mp4" type="video/mp4">
+		</video>
+		<h1 class = "header-section__heading"><span class="name">Daniel</span><span class = "header-section__heading_desc">Result Oriented <br> Web Developer</span></h1>
+	</section>
+
+
+	<section class="about-section" id  = "about">
+		<div class="wrapper">
+			<h1 class="about-section__header">BIO</h1>
+			<div class="about-section__content-container">
+				<div class="about-section__content-container__left-container">
+					<h3 class="about-section__content-container__left-container-name">Daniel Ras</h3>
+					<div class="about-section__content-container__left-container__photo">
+						<img src="images/about-section/avatar.png" alt="Personal Photo" class="about-section__content-container__left-container__photo_img">
+					</div>
+					<div class="about-section__content-container__left-container__social-links">
+						<a href="https://www.linkedin.com/in/daniel-raș-922576159" target = "_blank"><div><i class="fab fa-linkedin"></i></div></a>
+						<a href="https://github.com/seri0usDan" target = "_blank"><div><i class="fab fa-github"></i></div></a>
+						<a href="https://www.facebook.com/dan4ik50" target = "_blank"><div><i class="fab fa-facebook-f"></i></i></div></a>
+						<a href="https://codepen.io/ras98/" target = "_blank"><div><i class="fab fa-codepen"></i></div></a>
+					</div>
+
+				</div>
+				<div class="about-section__content-container__right-container">
+					<h2 class="about-section__content-container__right-container_header">Little about</h2>
+					<p class="about-section__content-container__right-container_info">
+						Hello, i guess you already know my name by the heading of this page. 
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque quaerat
+						nulla rem atque aliquam vitae ipsam harum. Ipsa inventore suscipit quas, eveniet, provident saepe sapiente sunt iste perspiciatis veritatis fuga accusantium nostrum? Minus id fuga v
+						eritatis cupiditate voluptatem eligendi ducimus placeat sed voluptatum deserunt, sint velit, illum labore at
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="skills-section" id  = "skills">
+			<h1 class="skills-section__header">MY SKILLS</h1>
+			<div class="wrapper">
+				<div class="skills-section__chart-container">
+						<div class = "skills-section__chart-container_legend">
+								<i class="fab fa-html5 html"></i>
+								<i class="fab fa-css3-alt css"></i>
+								<i class="fab fa-sass sass"></i>
+								<i class="fab fa-js js"></i>
+								<img src="images/skills/jquery.svg" class = "jq" alt="jquery">
+								<i class="fab fa-gulp gulp"></i>
+								
+
+						</div>
+						<div class = "skills-section__chart">
+							<canvas id="myChart"></canvas>
+							<span class = "skills-section__chart-container_code"><i class="fas fa-code"></i></span>
+						</div>
+				</div>
+			</div>
+			
+
+	</section>
+
+		<!-- The parralax quote -->
+		
+		<div class="parallax-window">
+			<div class="parallax-window_image">
+				<img src="images/churcill.jpg" alt="Winston Churcill - Portret">
+			</div>
+			<h3 class="parallax-window_quote">
+					We shape our <span>buildings;</span> thereafter they shape us.
+					<small class="author">- Winston <span>Churcill</span><small>
+			</h3>
+		</div>>
+
+		<!-- /The parralax quote -->
+
+	<section class="portfolio-section" id  = "portfolio">
+		<h1 class="portfolio-section__header">MY WORKS</h1>
+		<div class="owl-carousel owl-theme">
+			<div class="workpiece">
+				<img src="images/portfolio/1.jpg" alt="Work">
+				<a href=""> <div class = "button">VISIT</div></a>
+			</div>
+			<div class="workpiece"><img src="images/portfolio/2.jpg" alt="Work"><a href=""> <div class = "button">VISIT</div></a></div>
+			<div class="workpiece"><img src="images/portfolio/3.jpg" alt="Work"><a href=""> <div class = "button">VISIT</div></a></div>
+			<div class="workpiece"><img src="images/portfolio/4.jpg" alt="Work"><a href=""> <div class = "button">VISIT</div></a></div>
+			<div class="workpiece"><img src="images/portfolio/5.jpg" alt="Work"><a href=""> <div class = "button">VISIT</div></a></div>
+		</div>
+	</section>
+
+
+	<section class="contact-section" id  = "contact">
+		<h1 class="contact-section__header">CONTACT</h1>
+		<div class="contact-section__content-container">
+			<a href="tel:+37360937052" class="contact-section__phone">
+				+(373) 60937052
+			</a>
+			<div class="contact-section__email">
+				<a href="mailto:ras98.daniel@gmail.com" class="contact-section__email-link">
+					ras98.daniel@gmail.com
+				</a>
+			</div>
+			<div class="contact-section__social">
+				<a href="" class="contact-section__social_links"></a>
+				<a href="" class="contact-section__social_links"></a>
+				<a href="" class="contact-section__social_links"></a>
+				<a href="" class="contact-section__social_links"></a>
+			</div>
+			<p class = "contact-section__text">PS: Can't wait to develop our next project! 🤩</p>
+		</div>
+	</section>
+
+	<footer class="main-footer">
+		<h2 class = "main-footer__header">Have a great, productive day!</h2>
+		<small class = "main-footer__copy">Daniel's &copy; 2018</small>
+	</footer>
+
+	
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous">
+	</script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>	
+	<script src = "js/owl.carousel.min.js"></script>
+	<script src = "js/parallax.min.js"></script>
+	<script src = "js/main.js"></script>
+</body>
+</html>

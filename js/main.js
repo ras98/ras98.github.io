@@ -1,0 +1,102 @@
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+	});
+	// $(function(){
+	// 		$('.workpiece').hover(function() {
+	// 			$('.workpiece div').addClass(' button');
+	// 		});
+	// });
+});
+
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+		loop: true,
+		items: 5,
+		margin: 10,
+		autoplay: true,
+		autoplayHoverPause: true,
+		responsive: {
+			1400: {
+				items: 5
+			},
+			1300: {
+				items: 4
+			},
+			850: {
+				items: 3
+			},
+			550: {
+				items: 2
+			},
+			300: {
+				items: 1
+			}
+		}
+
+
+
+	});
+});
+
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ["HTML 5", "CSS 3", "Sass", "Java Script", "JQery", "Gulp"],
+        datasets: [{
+            data: [20, 20, 15, 10, 20, 15],
+            backgroundColor: [
+                'rgba(237, 94,38,.3)',
+                'rgba(42,166,228,.3)',
+                'rgba(198,83,140,.3)',
+                'rgba(247,223,30,.3)',
+                'rgba(27,117,187,.3)',
+                'rgba(232,76,80,.3)'
+            ],
+            borderColor: [
+							'rgba(237, 94,38,1)',
+							'rgba(42,166,228,1)',
+							'rgba(198,83,140,1)',
+							'rgba(247,223,30,1)',
+							'rgba(27,117,187,1)',
+							'rgba(232,76,80,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+				layout: {
+					padding: {
+						left: 0,
+						right: 0,
+            top: 0,
+            bottom: 0
+					}
+				},
+				legend: {
+					display: false
+				}
+    }
+});
+$('.parallax-window').parallax({imageSrc: 'images/parallax-3.jpeg'});
+
