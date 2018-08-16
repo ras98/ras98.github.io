@@ -13,6 +13,13 @@
 * {
 	box-sizing: border-box;
 }
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+}
+.overflow-mobile {
+	overflow-x: hidden;
+}
 html {
 	background: #F5F5F5;
 }
@@ -22,7 +29,6 @@ body {
 	font-family: 'Open Sans', sans-serif;	
 	color: #000;
 	width: 100%;
-	overflow-x: hidden;
 }
 .fade-out {
     opacity: 0;
@@ -781,7 +787,7 @@ h1 {
 		}
 		& .navbar__list {
 			position: absolute;
-			display: block;
+			display: none;
 			width: 300px;
 			text-align: center;
 			padding: 0;
@@ -809,6 +815,7 @@ h1 {
 		}
 		& input:checked ~ ul {
 			transform: none;
+			display: block;
 		}
 		& input:checked ~ span {
 			background-color: #FFF;
