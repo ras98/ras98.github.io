@@ -1,9 +1,4 @@
-$(document).ready(function(){
-	// setTimeout(function(){
-	// 	$(".loader").css("opacity", "0");
-	// 	setTimeout(function(){$(".loader").hide();}, 300);
-	// }, 3000);
-	
+$(document).ready(function(){	
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 

@@ -1,23 +1,3 @@
-/****************************************** Loader *******************************************************/
-body,
-html {
-  overflow: hidden;
-}
-.spoiler {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-  background: #000;
-}
-.spoiler a {
-  font-size: 100px;
-}
 /****************************************** General *******************************************************/
 ::-webkit-scrollbar {
   width: 0.5%;
@@ -604,7 +584,7 @@ h1 {
   margin: 5px;
   font-size: 30px;
   margin-top: 40px;
-  background: linear-gradient(60deg, #df2020 10%, #df6020 10%, #df6020 25%, #dfbf20 25%, #dfbf20 40%, #20df40 40%, #20df40 55%, #209fdf 55%, #209fdf 70%, #6020df 70%, #6020df 85%, #df2020 85%);
+  background: linear-gradient(60deg, hsl(0, 75%, 50%) 10%, hsl(20, 75%, 50%) 10%, hsl(20, 75%, 50%) 25%, hsl(50, 75%, 50%) 25%, hsl(50, 75%, 50%) 40%, hsl(130, 75%, 50%) 40%, hsl(130, 75%, 50%) 55%, hsl(200, 75%, 50%) 55%, hsl(200, 75%, 50%) 70%, hsl(260, 75%, 50%) 70%, hsl(260, 75%, 50%) 85%, hsl(0, 75%, 50%) 85%);
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
